@@ -1,10 +1,22 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="utf-8">
+  <title>Rotation</title>
+  <script src="main.js"></script>
 </head>
-<body>
-    Hello World!
+
+<body onload="setupSelect()">
+  <div>
+    <label for="myName">Who I am?</label>
+    <select id="myName" onchange="showReviewer(this.value)">
+      <option value="-1"></option>
+    </select>
+  </div>
+  <br>
+  <br>
+  Reviewer:
+  <p id="reviewer"></p>
 </body>
 </html>
